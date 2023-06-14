@@ -26,6 +26,7 @@ console.log('after signin',currUser);
     // const {name,email,password} = data;
     // console.log(name);
     try {
+      console.log('before fetching',data);
         const res = await fetch('/signin',{
             method:'POST',
             headers:{
