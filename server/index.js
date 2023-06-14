@@ -22,14 +22,17 @@ app.use(router); // using router
 // // };
 
 
-const corsOptions = {
-  origin: "https://pubdemy.vercel.app",
+const corsOpts = {
+  origin: '*',
   credentials: true,
+  methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
+  allowedHeaders: ['Content-Type'],
+  exposedHeaders: ['Content-Type']
 };
-app.use(cors(corsOptions));
+app.use(cors(corsOpts));
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin", true);
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
