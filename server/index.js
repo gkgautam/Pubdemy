@@ -23,8 +23,7 @@ app.use(router); // using router
 
 
 const corsOptions = {
-  origin: ["https://pubdemy.vercel.app"],
-  origin: true,
+  origin: "https://pubdemy.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOptions));
