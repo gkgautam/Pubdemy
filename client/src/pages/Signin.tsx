@@ -26,7 +26,7 @@ console.log('after signin',currUser);
     // const {name,email,password} = data;
     // console.log(name);
     try {
-        const res = await fetch('https://pubdemy-server.onrender.com/signin',{
+        const res = await fetch('/signin',{
             method:'POST',
             headers:{
                 "Content-Type":'application/json',
