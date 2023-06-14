@@ -15,7 +15,7 @@ export default function Signup() {
     // const {name,email,password} = data;
     // console.log(name);
     try {
-        const res = await fetch('https://pubdemy-server.onrender.com/signup',{
+        const res = await fetch('/signup',{
             method:'POST',
             headers:{
                 "Content-Type":'application/json'
