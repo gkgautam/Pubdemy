@@ -10,7 +10,7 @@ require('./db/db');
 
 app.use(router); // using router
 
-app.use(cors({ origin: true, credentials: true }));
+// app.use(cors({ origin: true, credentials: true }));
 // module.exports = function(app) {
 //   app.use(
 //     '/router',
@@ -20,6 +20,14 @@ app.use(cors({ origin: true, credentials: true }));
 //     })
 //   );
 // // };
+
+
+const corsOptions = {
+  origin: ["https://pubdemy.vercel.app"],
+  origin: true,
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

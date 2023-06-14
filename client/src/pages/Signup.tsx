@@ -19,6 +19,10 @@ export default function Signup() {
             method:'POST',
             headers:{
                 "Content-Type":'application/json',
+                'Host': 'pubdemy-server.onrender.com',
+                'Referrer-Policy': 'same-origin',
+                'Cache-Control': 'public, max-age=86400',
+                'X-Frame-Options': 'DENY'
             },
             body:JSON.stringify(data)
         })

@@ -30,6 +30,8 @@ console.log('after signin',currUser);
             method:'POST',
             headers:{
                 "Content-Type":'application/json',
+                'Host': 'pubdemy-server.onrender.com',
+                'Referrer-Policy': 'same-origin'
             },
             body:JSON.stringify(data)
         })
