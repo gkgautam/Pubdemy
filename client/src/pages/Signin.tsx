@@ -30,7 +30,7 @@ console.log('after signin',currUser);
             method:'POST',
             headers:{
                 "Content-Type":'application/json',
-                'Host': 'pubdemy-server.onrender.com'
+               
             },
             body:JSON.stringify(data)
         })
