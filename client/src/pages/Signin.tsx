@@ -29,7 +29,8 @@ console.log('after signin',currUser);
         const res = await fetch('/signin',{
             method:'POST',
             headers:{
-                "Content-Type":'application/json'
+                "Content-Type":'application/json',
+                'Host': 'pubdemy-server.onrender.com'
             },
             body:JSON.stringify(data)
         })

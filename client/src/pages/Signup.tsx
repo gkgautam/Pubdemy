@@ -18,7 +18,8 @@ export default function Signup() {
         const res = await fetch('/signup',{
             method:'POST',
             headers:{
-                "Content-Type":'application/json'
+                "Content-Type":'application/json',
+                'Host': 'pubdemy-server.onrender.com'
             },
             body:JSON.stringify(data)
         })
