@@ -22,7 +22,7 @@ console.log('after signin',currUser);
   const dispatch = useAppDispatch();
 
   const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> =async (data) => {
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
     // const {name,email,password} = data;
     // console.log(name);
     try {
@@ -36,6 +36,7 @@ console.log('after signin',currUser);
             body:JSON.stringify(data)
         })
         const result = await res.json();
+        console.log('result bhai',result);
         if(result.authencated===false){
             alert('invalid credentials!');
         }
