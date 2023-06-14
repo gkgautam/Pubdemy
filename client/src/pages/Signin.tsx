@@ -66,7 +66,7 @@ console.log('after signin',currUser);
     <form onSubmit={handleSubmit(onSubmit)}>
       {/* <input defaultValue="" {...register("name")} placeholder="full name" /> */}
       <div className="form-floating mb-3">
-          <input defaultValue=""
+          <input
           {...register("email")}
           type="text"
           className="form-control"
@@ -81,7 +81,7 @@ console.log('after signin',currUser);
       {/* include validation with required or other standard HTML validation rules */}
       {/* <input {...register("password", { required: true })} placeholder="password" /> */}
       <div className="form-floating mb-3">
-          <input defaultValue=""
+          <input
           {...register("password")}
           type="password"
           className="form-control"
